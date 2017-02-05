@@ -79,6 +79,7 @@ a:hover {
 ************************************************************/
 
 button {
+  margin-bottom: 2em;
   border-style: solid;
   border-radius: 1em;
   border-width: 5px;

@@ -7,7 +7,7 @@ var randomQuote = {
   },
 
   getQuote: function() {
-    $.getJSON("http://quotes.stormconsultancy.co.uk/random.json", function(json) {
+    $.getJSON("https://quotes.stormconsultancy.co.uk/random.json", function(json) {
       author = JSON.stringify(json.author);
       quote = JSON.stringify(json.quote);
       randomQuote.authorUnquote();
