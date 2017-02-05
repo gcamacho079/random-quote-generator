@@ -7,7 +7,7 @@ var randomQuote = {
   },
 
   getQuote: function() {
-    $.getJSON("https://quotes.stormconsultancy.co.uk/random.json", function(json) {
+    $.getJSON("https://cors-anywhere.herokuapp.com/http://quotes.stormconsultancy.co.uk/random.json", function(json) {
       author = JSON.stringify(json.author);
       quote = JSON.stringify(json.quote);
       randomQuote.authorUnquote();
