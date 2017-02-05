@@ -4,7 +4,6 @@ var quote;
 var randomQuote = {
   init: function() {
     randomQuote.getQuote();
-    console.log("HELLOW!")
   },
 
   getQuote: function() {
@@ -23,6 +22,7 @@ var randomQuote = {
     author = author.substring(1, author.length - 1);
     return author;
   }
+
 };
 
 $(document).ready(randomQuote.init);
