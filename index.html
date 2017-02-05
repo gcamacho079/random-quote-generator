@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Random Quote Generator</title>
+  <title>Programming Quote Generator</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Arimo:400,700|Didact+Gothic" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles/style.css">
 
 </head>
 
 <body>
-  <div class="container">
-    <h1>Random Quote Generator</h1>
-    <p id="quoteText"></p>
-    <p id="quoteAuthor"></p>
-    <button onclick="randomQuote.getQuote()">Generate</button>
+  <div class=content-wrapper>
+
+    <h1>Programming Quote Generator</h1>
+
+    <section id="quoteArea">
+      <p id="quoteText"></p>
+      <p id="quoteAuthor"></p>
+    </section>
+
+    <button class="shadow" onclick="randomQuote.getQuote()">Randomize</button>
+
+    <footer>
+      <p>Made possible with the <a href="http://quotes.stormconsultancy.co.uk/api" target="_blank">Programming Quotes API</a></p>
+      <p>Developed by <a href="https://github.com/gcamacho079" target="_blank">Guadalupe Camacho</a></p>
+    </footer>
   </div>
+
+
+
+
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>

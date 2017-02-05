@@ -11,9 +11,7 @@ var randomQuote = {
       author = JSON.stringify(json.author);
       quote = JSON.stringify(json.quote);
       randomQuote.authorUnquote();
-      console.log(author);
       $("#quoteAuthor").html(author);
-      console.log(quote);
       $("#quoteText").html(quote);
     });
   },

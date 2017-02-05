@@ -1,3 +1,102 @@
+/************************************************************
+  General Body
+************************************************************/
+
+
 body {
   text-align: center;
+  color: #FFF;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  max-width: 650px;
+  width: 88%;
+  padding-top: 1em;
+  min-height: 100%;
+  margin-bottom: -100px;
+}
+
+@media screen and (min-width: 720px) {
+  .content-wrapper {
+    width: 80%;
+  }
+}
+
+/************************************************************
+  Background
+************************************************************/
+
+body {
+  background-color: #49a09d;
+  background-image: linear-gradient(to right, #5f2c82, #49a09d);
+}
+
+/************************************************************
+  Typography
+************************************************************/
+
+h1 {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 2.6em;
+}
+
+p {
+  font-family: 'Arimo', sans-serif;
+}
+
+#quoteText,
+#quoteAuthor {
+  font-size: 1.1em;
+}
+
+footer p {
+  text-align: right;
+}
+
+a {
+  color: #daedec;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/************************************************************
+  Quote Area
+************************************************************/
+
+#quoteArea {
+  margin: 2em 0;
+  border-style: solid;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+/************************************************************
+  Button
+************************************************************/
+
+button {
+  border-style: solid;
+  border-radius: 1em;
+  border-width: 5px;
+  border-color: white;
+  color: white;
+  background-color: transparent;
+  padding: 0.5em 3em;
+  -webkit-box-shadow: 3px 3px 6px #333;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px 6px #333;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         3px 3px 6px #333;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  -webkit-box-shadow: 3px 3px 10px #000;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px 10px #000;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         3px 3px 10px #000;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
