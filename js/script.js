@@ -1,6 +1,8 @@
 var author;
 var quote;
+var quoteIdentifier;
 var totalLength;
+var tweetableQuote;
 
 var randomQuote = {
   init: function() {
@@ -11,6 +13,8 @@ var randomQuote = {
     $.getJSON("https://cors-anywhere.herokuapp.com/http://quotes.stormconsultancy.co.uk/random.json", function(json) {
       author = JSON.stringify(json.author);
       quote = JSON.stringify(json.quote);
+      quoteID = JSON.stringify(json.id);
+      quoteID = parseInt(quoteID);
       randomQuote.removeQuotes();
       $("#quoteAuthor").html(author);
       $("#quoteText").html(quote);
@@ -32,17 +36,14 @@ var tweet = {
   checkLength: function() {
     totalLength = author.length + quote.length;
     console.log(totalLength);
-    if (totalLength < 141) {
-      console.log("Let's tweet this!");
+    if (totalLength < 137) {
+      $("#twitter-button").show();
+      console.log(quote + " - " + author);
     }
     else {
-      tweet.shortenQuote();
+      $("#twitter-button").hide();
     }
-  },
-
-  shortenQuote: function() {
-    console.log("We've gotta work on this one...");
   }
-}
+};
 
 $(document).ready(randomQuote.init);
