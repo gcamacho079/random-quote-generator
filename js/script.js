@@ -26,11 +26,9 @@ var randomQuote = {
 
   tweetabilityCheck: function() {
     totalLength = author.length + quote.length;
-    console.log(totalLength);
     if (totalLength < 137) {
       tweetableQuote = quote + " - " + author;
       $("#twitter-button").show();
-      console.log(tweetableQuote);
     }
     else {
       $("#twitter-button").hide();
@@ -39,11 +37,11 @@ var randomQuote = {
 };
 
 var tweet = {
-  init: function() {
-    tweet.makeLink();
-  },
+  tweetLink: "",
 
   makeLink: function() {
+    tweetLink = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(tweetableQuote);
+    $("#twitter-link").attr("href", tweetLink);
   }
 };
 
